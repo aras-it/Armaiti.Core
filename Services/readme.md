@@ -1,4 +1,4 @@
-﻿# EmailService
+# EmailService
 Email Service send SMTP email with/without message template.
 
 ### How to configure and use?
@@ -22,7 +22,7 @@ The following Configuration snippet shows example and default values:
     "password": "noreply password"
   }
 ```
-**Note:** You can use custom xslt template to create MessageDocument. [more](https://github.com/aras-it/Armaiti.Core/Messaging#MessageDocument)
+**Note:** You can use custom xslt template to create MessageDocument. [more](https://github.com/aras-it/Armaiti.Core/tree/master/Messaging#MessageDocument)
 
 #### Step 2
 Register SMTP configuration instance and add EmailService
