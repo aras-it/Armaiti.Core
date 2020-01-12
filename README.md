@@ -8,9 +8,9 @@ and more.
 
 ## Features
 
--   **Email Service** send SMTP email with/without message template. ([more…](https://github.com/aras-it/Armaiti.Core/Services#EmailService))
+-   **Email Service** send SMTP email with/without message template. ([more…](https://github.com/aras-it/Armaiti.Core/tree/master/Services#emailservice))
 
--   **Localization** ([more…](https://github.com/aras-it/Armaiti.Core/Localization#Localization))
+-   **Localization** ([more…](https://github.com/aras-it/Armaiti.Core/tree/master/Localization#Localization))
 
     -   **MultiResourceLocalizer** is a service to enable localization for
         applications with multiple resource sources.
@@ -18,9 +18,9 @@ and more.
     -   **RequestUICulture** represent the most widely used cultural features.
 
 -   **LanguagesTagHelper** creates a bootstrap dropdown menu for available
-    languages in supported cultures of [RequestLocalizationOptions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.requestlocalizationoptions?view=aspnetcore-3.1). ([more…](https://github.com/aras-it/Armaiti.Core/TagHelpers/readme.md))
+    languages in supported cultures of [RequestLocalizationOptions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.requestlocalizationoptions?view=aspnetcore-3.1). ([more…](https://github.com/aras-it/Armaiti.Core/tree/master/TagHelpers#LanguagesTagHelper))
 
--   **Extentions** ([more…](https://github.com/aras-it/Armaiti.Core/Extentions#Extentions))
+-   **Extentions** ([more…](https://github.com/aras-it/Armaiti.Core/tree/master/Extentions#Extentions))
 
     -   **ColorExtensions** provide functionality to convert color formats
         such as Hex to Rgb and vice versa.
