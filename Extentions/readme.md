@@ -1,4 +1,4 @@
-﻿# Extentions
+# Extentions
 
 ### ColorExtensions
 ColorExtensions provide functionality to convert color formats such as Hex to Rgb and vice versa.
@@ -29,7 +29,7 @@ public class CommentController
   }
 }
 ```
-**Note:** userIP is an instance of [IP class](https://github.com/aras-it/Armaiti.Core/Http/IP.cs) include [IPAddress](https://docs.microsoft.com/en-us/dotnet/api/system.net.ipaddress?view=netcore-3.1) and [IPHostEntry](https://docs.microsoft.com/en-us/dotnet/api/system.net.iphostentry?view=netcore-3.1).
+**Note:** userIP is an instance of [IP class](https://github.com/aras-it/Armaiti.Core/tree/master/Http/IP.cs) include [IPAddress](https://docs.microsoft.com/en-us/dotnet/api/system.net.ipaddress?view=netcore-3.1) and [IPHostEntry](https://docs.microsoft.com/en-us/dotnet/api/system.net.iphostentry?view=netcore-3.1).
 
 **Note:** This method returns :::1 (127.0.0.1) on the development machine but returns the correct value on the web server.
 
@@ -61,7 +61,7 @@ public class Startup
   }
 }
 ```
-**Note:** All resx files are available [here](https://github.com/aras-it/Armaiti.Core/Files/Resources)
+**Note:** All resx files are available [here](https://github.com/aras-it/Armaiti.Core/tree/master/_files/resources)
 
 
 ### PreventInjectionExtensions
