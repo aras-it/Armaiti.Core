@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Farrokh Rezazadeh</Authors>
+    <Company>Aras IT</Company>
+    <Description>General utilities and tools for dotnet and asp.net core appliations such as localization, email service, prevent sql injection and more.
+
+This package was built from the source code at https://github.com/aras-it/Armaiti.Core</Description>
+    <Copyright>www.arasit.com</Copyright>
+    <PackageTags>aspnetcore, dotnetcore, localization, smtp-email, email-service, sql-injection, user-ip</PackageTags>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/aras-it/Armaiti.Core/</PackageProjectUrl>
+    <AssemblyName>Armaiti.Core</AssemblyName>
+    <RootNamespace>Armaiti.Core</RootNamespace>
+    <RepositoryUrl>https://github.com/aras-it/Armaiti.Core/</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <Version>1.1.0</Version>
+    <PackageIcon>armaiti.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="_files\images\armaiti.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="_files\License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
