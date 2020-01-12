@@ -1,4 +1,4 @@
-﻿# MessageDocument
+# MessageDocument
 MessageDocument is an xml serializable class for serializing an email message template. This class has a required attribute called Body and 5 optional attributes called Direction, Header, Title, Links and Footer. The XSLT template for MessageDocument can be as follows:
 
 ```
@@ -110,4 +110,4 @@ public class EmailSample
 }
 ```
 
-See [here](https://github.com/aras-it/Armaiti.Core/Services#EmailService) for more information on configuring SMTP.
+See [here](https://github.com/aras-it/Armaiti.Core/tree/master/Services#EmailService) for more information on configuring SMTP.
