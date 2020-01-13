@@ -86,6 +86,7 @@ Add a transient service of IRequestUICulture.
 ```
 
 
+
 ## MultiResourceLocalizer
 **MultiResourceLocalizer** is a service to enable localization for applications with multiple resource sources.
 
