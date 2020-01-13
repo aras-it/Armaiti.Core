@@ -3,7 +3,16 @@
 ## RequestUICulture
 **RequestUICulture** represent the most widely used cultural features.
 
-### How to setup?
+Property | Type | Description
+-------- | ---- | -----------
+Culture | CultureInfo | Current UI CultureInfo.
+IsRTL | Boolean | Gets a value indicating whether the current TextInfo object represents a writing system where text flows from right to left.
+Direction | String | Gets a value indicating whether the current culture direction.
+Language | String | Gets the ISO 639-1 two-letter code for the language of the current CultureInfo.
+Name | String | Gets the culture name in the format languagecode2-country/regioncode2.
+
+
+### How to setup localization?
 
 #### Step 1
 Specify the supported cultures
@@ -85,7 +94,40 @@ Add a transient service of IRequestUICulture.
       .AddTransient<IRequestUICulture, RequestUICulture>();
 ```
 
+### How to use?
 
+#### Step 1
+Inject IRequestUICulture to _ViewImports or _Layout
+```
+  @inject IRequestUICulture Culture
+```
+
+#### Step 2
+You can use the injected culture to localize the UI as follows:
+```
+<!DOCTYPE html>
+<html lang="@Culture.Language" dir="@(Culture.Direction)">
+...
+<body class="@Culture.Name">
+...
+```
+Simple css class of body element for specific cultures:
+```
+.en-US {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+.ja-JP {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    text-align: left;
+}
+
+.fa-IR {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+}
+```
 
 ## MultiResourceLocalizer
 **MultiResourceLocalizer** is a service to enable localization for applications with multiple resource sources.
