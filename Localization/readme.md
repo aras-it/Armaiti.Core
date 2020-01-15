@@ -81,6 +81,7 @@ You can change which providers are configured to determine the culture for reque
 
 #### Step 3
 Add a transient service of IRequestUICulture.
+
 **Note:** You need to add IHttpContextAccessor service too, because IHttpContextAccessor is no longer wired up by default, so you have to register it yourself.
 ```
   ...
