@@ -81,17 +81,28 @@ You can change which providers are configured to determine the culture for reque
 
 #### Step 3
 Add a transient service of IRequestUICulture.
+**Note:** You need to add IHttpContextAccessor service too, because IHttpContextAccessor is no longer wired up by default, so you have to register it yourself.
 ```
   ...
 
-  services.AddTransient<IRequestUICulture, RequestUICulture>();
-```
-**Note:** Sometimes you need to add IHttpContextAccessor service, because IHttpContextAccessor is no longer wired up by default, so you have to register it yourself.
-```
-  ...
-
-  services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>()
+  services.AddHttpContextAccessor()
       .AddTransient<IRequestUICulture, RequestUICulture>();
+```
+
+#### Step 4
+Configure the HTTP request pipeline
+```
+public class Startup
+{
+  ...
+
+  public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+  {
+    var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
+    app.UseRequestLocalization(locOptions.Value);
+    ...
+  }
+}
 ```
 
 ### How to use?
